@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import styles from './BackToTopButton.module.css';
+import styles from '../styles/BackToTopButton.module.css';
 
 /**
  * =====================================================================
