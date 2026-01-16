@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './page.module.css';
 
 /**
@@ -14,12 +15,25 @@ export default function Page() {
     <div className={styles.pageWrapper}>
       {/* .contentContainer: กล่องสีขาวสำหรับใส่เนื้อหาหลัก จัดให้อยู่กึ่งกลางและมีเงา */}
       <div className={styles.contentContainer}>
+        {/* === Document Header (Letterhead) === */}
+        <div style={{ textAlign: 'center', marginBottom: '2rem', borderBottom: '2px solid #eaeaea', paddingBottom: '1.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
+            <Image src="/logo.jpg" alt="Logo" width={80} height={80} />
+          </div>
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', margin: '0 0 0.5rem 0', color: '#333' }}>
+            โรงพยาบาลชุมชนเทศบาลเมืองกำแพงเพชร
+          </h2>
+          <p style={{ fontSize: '0.9rem', color: '#666', margin: 0 }}>
+            งานส่งเสริมสุขภาพแม่และเด็ก
+          </p>
+        </div>
+
         {/* .mainTitle: หัวข้อหลักของหน้า */}
-        <h1 className={styles.mainTitle}>
+        <h1 className={styles.mainTitle} style={{ textAlign: 'center', marginTop: 0 }}>
           ข้อกำหนดและเงื่อนไขการให้บริการ (Terms of Service)
         </h1>
         {/* .lastUpdated: แสดงวันที่ปรับปรุงล่าสุด */}
-        <p className={styles.lastUpdated}>
+        <p className={styles.lastUpdated} style={{ textAlign: 'center', fontStyle: 'italic', color: '#666' }}>
           ปรับปรุงล่าสุด: 23/8/2568
         </p>
 
@@ -27,12 +41,12 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           1. บทนำ
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           ยินดีต้อนรับสู่ งานส่งเสริมสุขภาพแม่และเด็ก เว็บไซต์สนับสนุนการส่งเสริมสุขภาพมารดาและทารก ("เรา", "พวกเรา", หรือ "ของเรา")
           ข้อกำหนดและเงื่อนไขการให้บริการนี้ ("ข้อกำหนด") ควบคุมการใช้งานเว็บไซต์และบริการของเราที่
           เว็บไซต์นี้ ("บริการ") โดยผู้ใช้งาน ("คุณ" หรือ "ของคุณ")
         </p>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           โปรดอ่านข้อกำหนดเหล่านี้อย่างละเอียดก่อนใช้บริการของเรา การเข้าถึงหรือใช้บริการแสดงว่าคุณตกลงที่จะผูกพันตามข้อกำหนดเหล่านี้
           หากคุณไม่ยอมรับส่วนใดส่วนหนึ่งของข้อกำหนด คุณจะไม่สามารถเข้าถึงบริการได้
         </p>
@@ -41,11 +55,11 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           2. บัญชีผู้ใช้
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           เมื่อคุณสร้างบัญชีกับเรา คุณต้องให้ข้อมูลที่ถูกต้อง ครบถ้วน และเป็นปัจจุบันอยู่เสมอ
           การไม่ทำเช่นนั้นถือเป็นการละเมิดข้อกำหนด ซึ่งอาจส่งผลให้บัญชีของคุณถูกยกเลิกบริการของเราได้ทันที
         </p>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           คุณมีหน้าที่รับผิดชอบในการรักษารหัสผ่านที่คุณใช้ในการเข้าถึงบริการและสำหรับกิจกรรมหรือการกระทำใดๆ ภายใต้รหัสผ่านของคุณ
           คุณตกลงที่จะไม่เปิดเผยรหัสผ่านของคุณแก่บุคคลที่สาม และต้องแจ้งให้เราทราบทันทีเมื่อทราบถึงการละเมิดความปลอดภัยหรือการใช้บัญชีของคุณโดยไม่ได้รับอนุญาต
         </p>
@@ -54,7 +68,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           3. ทรัพย์สินทางปัญญา
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           บริการและเนื้อหาต้นฉบับ (ไม่รวมเนื้อหาที่ผู้ใช้ให้มา) คุณสมบัติ และฟังก์ชันการทำงานเป็นและจะยังคงเป็นทรัพย์สินแต่เพียงผู้เดียวของผู้ให้บริการ และผู้ให้อนุญาต
           บริการนี้ได้รับการคุ้มครองตามกฎหมายลิขสิทธิ์ เครื่องหมายการค้า และกฎหมายอื่นๆ ทั้งในและต่างประเทศ
         </p>
@@ -63,7 +77,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           4. การใช้งานที่ต้องห้าม
         </h2>
-        <p className={styles.paragraph}>คุณตกลงที่จะไม่ใช้บริการเพื่อ:</p>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>คุณตกลงที่จะไม่ใช้บริการเพื่อ:</p>
         <ul className={styles.list}>
           <li>วัตถุประสงค์ที่ผิดกฎหมายหรือเพื่อส่งเสริมกิจกรรมที่ผิดกฎหมาย</li>
           <li>ละเมิดสิทธิ์ของผู้อื่น รวมถึงแต่ไม่จำกัดเพียงทรัพย์สินทางปัญญา ความเป็นส่วนตัว หรือสิทธิ์ในสัญญา</li>
@@ -75,10 +89,10 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           5. การสิ้นสุดการให้บริการ
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           เราอาจยุติหรือระงับบัญชีของคุณได้ทันที โดยไม่ต้องแจ้งให้ทราบล่วงหน้าหรือรับผิด สำหรับเหตุผลใดๆ ก็ตาม รวมถึงแต่ไม่จำกัดเพียงหากคุณละเมิดข้อกำหนด
         </p>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           เมื่อสิ้นสุดการให้บริการ สิทธิ์ในการใช้บริการของคุณจะสิ้นสุดลงทันที หากคุณต้องการยกเลิกบัญชีของคุณ คุณสามารถหยุดใช้บริการได้
         </p>
 
@@ -86,7 +100,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           6. ข้อจำกัดความรับผิด
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           ไม่ว่าในกรณีใดๆ ผู้ให้บริการ หรือกรรมการ, พนักงาน, คู่ค้า, ตัวแทน, ซัพพลายเออร์, หรือบริษัทในเครือ
           จะไม่รับผิดชอบต่อความเสียหายทางอ้อม, โดยบังเอิญ, พิเศษ, ที่เป็นผลสืบเนื่องหรือเป็นการลงโทษใดๆ
           รวมถึงแต่ไม่จำกัดเพียงการสูญเสียผลกำไร, ข้อมูล, การใช้งาน, ค่าความนิยม, หรือการสูญเสียที่จับต้องไม่ได้อื่นๆ
@@ -96,7 +110,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           7. การปฏิเสธการรับประกัน
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           การใช้บริการของคุณเป็นความเสี่ยงของคุณแต่เพียงผู้เดียว บริการนี้มีให้ "ตามสภาพ" และ "ตามที่มี"
           บริการนี้มีให้โดยไม่มีการรับประกันใดๆ ไม่ว่าจะโดยชัดแจ้งหรือโดยนัย
         </p>
@@ -105,7 +119,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           8. กฎหมายที่ใช้บังคับ
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           ข้อกำหนดเหล่านี้จะถูกควบคุมและตีความตามกฎหมายของประเทศไทย โดยไม่คำนึงถึงข้อขัดแย้งของบทบัญญัติทางกฎหมาย
         </p>
 
@@ -113,7 +127,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           9. การเปลี่ยนแปลง
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           เราขอสงวนสิทธิ์ตามดุลยพินิจของเราแต่เพียงผู้เดียวในการแก้ไขหรือเปลี่ยนแปลงข้อกำหนดเหล่านี้ได้ตลอดเวลา
           หากการแก้ไขนั้นเป็นสาระสำคัญ เราจะพยายามแจ้งให้ทราบล่วงหน้าอย่างน้อย 30 วันก่อนที่ข้อกำหนดใหม่จะมีผลบังคับใช้
         </p>
@@ -122,7 +136,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           10. ติดต่อเรา
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           หากคุณมีคำถามใดๆ เกี่ยวกับข้อกำหนดเหล่านี้ โปรดติดต่อเรา: 055-716-715
         </p>
       </div>

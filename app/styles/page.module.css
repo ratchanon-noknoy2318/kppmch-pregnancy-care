@@ -6,15 +6,18 @@
  */
 .pageMain {
   background-color: var(--background-brand);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* font-sans */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-sans */
   color: var(--text-primary);
-  padding-top: 4rem; /* เพิ่ม padding ด้านบนเพื่อชดเชยความสูงของ Navbar ที่เป็น fixed */
+  padding-top: 4rem;
+  /* เพิ่ม padding ด้านบนเพื่อชดเชยความสูงของ Navbar ที่เป็น fixed */
 }
 
 /* Container หลักสำหรับจำกัดความกว้างของเนื้อหาให้อยู่ตรงกลาง */
 .container {
   width: 100%;
-  max-width: 72rem; /* 1152px, เทียบเท่า max-w-6xl */
+  max-width: 72rem;
+  /* 1152px, เทียบเท่า max-w-6xl */
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -28,34 +31,43 @@
  * ส่วนบนสุดของหน้า (First Fold) ที่ใช้ดึงดูดความสนใจ
  */
 .heroSection {
-  padding: 4rem 1rem; /* เพิ่ม padding ให้ใหญ่ขึ้น */
+  padding: 4rem 1rem;
+  /* เพิ่ม padding ให้ใหญ่ขึ้น */
 }
 
 .heroContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* จัดเนื้อหาชิดซ้ายบนจอมือถือ */
+  align-items: flex-start;
+  /* จัดเนื้อหาชิดซ้ายบนจอมือถือ */
   gap: 2rem;
 }
 
 .heroTextWrapper {
   text-align: left;
-  max-width: 56rem; /* max-w-4xl, ขยายความกว้างส่วนข้อความ */
+  max-width: 56rem;
+  /* max-w-4xl, ขยายความกว้างส่วนข้อความ */
 }
 
 .heroTitle {
-  font-size: 2.25rem; /* text-4xl, เพิ่มขนาดตัวอักษร */
+  font-size: 2.25rem;
+  /* text-4xl, เพิ่มขนาดตัวอักษร */
   line-height: 2.5rem;
-  font-weight: 700; /* font-bold */
+  font-weight: 700;
+  /* font-bold */
   color: var(--text-primary);
-  margin-bottom: 1rem; /* mb-4 */
+  margin-bottom: 1rem;
+  /* mb-4 */
   line-height: 1.2;
 }
 
 .heroDescription {
-  font-size: 1.125rem; /* text-lg, เพิ่มขนาดตัวอักษร */
-  max-width: 48rem; /* max-w-3xl, ขยายความกว้าง */
-  margin-bottom: 2rem; /* mb-8 */
+  font-size: 1.125rem;
+  /* text-lg, เพิ่มขนาดตัวอักษร */
+  max-width: 48rem;
+  /* max-w-3xl, ขยายความกว้าง */
+  margin-bottom: 2rem;
+  /* mb-8 */
   color: var(--text-secondary);
   margin-left: auto;
   margin-right: auto;
@@ -66,14 +78,17 @@
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  max-width: 20rem; /* max-w-xs */
+  max-width: 20rem;
+  /* max-w-xs */
   margin: 0;
 }
 
 .heroImageWrapper {
-  display: none; /* ซ่อนรูปภาพในหน้าจอมือถือ */
+  display: none;
+  /* ซ่อนรูปภาพในหน้าจอมือถือ */
   width: 100%;
-  max-width: 42rem; /* max-w-2xl, ทำให้รูปใหญ่ขึ้นอีก */
+  max-width: 42rem;
+  /* max-w-2xl, ทำให้รูปใหญ่ขึ้นอีก */
 }
 
 .heroImage {
@@ -90,12 +105,15 @@
  */
 .button {
   font-weight: 700;
-  padding: 0.75rem 2rem; /* py-3 px-8 */
+  padding: 0.75rem 2rem;
+  /* py-3 px-8 */
   border-radius: var(--border-radius-md);
   transition: all 0.3s;
-  font-size: 1.125rem; /* text-lg */
+  font-size: 1.125rem;
+  /* text-lg */
   width: 100%;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 /* ปุ่มหลัก (สีชมพู) */
@@ -104,6 +122,7 @@
   color: var(--text-on-brand);
   box-shadow: var(--shadow-md);
 }
+
 .buttonPrimary:hover {
   background-color: var(--color-brand-pink-darker);
   box-shadow: var(--shadow-lg);
@@ -116,6 +135,7 @@
   border-color: var(--color-brand-pink);
   box-shadow: none;
 }
+
 .buttonSecondary:hover {
   background-color: var(--background-brand);
 }
@@ -127,7 +147,8 @@
  * สไตล์ที่ใช้ร่วมกันในหลายๆ Section เพื่อความสอดคล้องกันของดีไซน์
  */
 .section {
-  padding: 4rem 1rem; /* py-16 px-4 */
+  padding: 4rem 1rem;
+  /* py-16 px-4 */
 }
 
 .sectionRed100 {
@@ -137,18 +158,23 @@
 /* หัวข้อหลักของแต่ละ Section */
 .sectionTitle {
   color: var(--text-primary);
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.875rem;
+  /* text-3xl */
   font-weight: 700;
-  margin-bottom: 1rem; /* mb-4 */
+  margin-bottom: 1rem;
+  /* mb-4 */
   text-align: center;
 }
 
 /* คำอธิบายรองของแต่ละ Section */
 .sectionDescription {
   color: var(--text-secondary);
-  margin-bottom: 2rem; /* mb-8 */
-  text-align: center; /* ปรับเป็น center สำหรับ mobile-first */
-  max-width: 42rem; /* max-w-2xl */
+  margin-bottom: 2rem;
+  /* mb-8 */
+  text-align: center;
+  /* ปรับเป็น center สำหรับ mobile-first */
+  max-width: 42rem;
+  /* max-w-2xl */
   margin-left: auto;
   margin-right: auto;
 }
@@ -156,12 +182,14 @@
 /* รูปภาพประกอบใน Section ต่างๆ */
 .sectionImage {
   border-radius: var(--border-radius-lg);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.08);
+  /* Softer shadow */
   width: 100%;
   height: auto;
   object-fit: cover;
   transition: transform 0.3s;
 }
+
 .sectionImage:hover {
   transform: scale(1.05);
 }
@@ -182,12 +210,14 @@
 }
 
 .splitSectionImageWrapper {
-  display: none; /* ซ่อนรูปภาพในหน้าจอมือถือโดยค่าเริ่มต้น */
+  display: none;
+  /* ซ่อนรูปภาพในหน้าจอมือถือโดยค่าเริ่มต้น */
 }
 
 .splitSectionTextWrapper {
   width: 100%;
-  max-width: 48rem; /* max-w-3xl, ปรับให้กว้างขึ้นสำหรับ text-only */
+  max-width: 48rem;
+  /* max-w-3xl, ปรับให้กว้างขึ้นสำหรับ text-only */
 }
 
 .splitSectionTextWrapper {
@@ -212,7 +242,8 @@
  */
 /* --- About Us Section --- */
 .aboutUsText {
-  font-size: 1.125rem; /* text-lg, ทำให้ใหญ่ขึ้น */
+  font-size: 1.125rem;
+  /* text-lg, ทำให้ใหญ่ขึ้น */
   line-height: 1.75rem;
   color: var(--text-secondary);
   text-align: left;
@@ -220,7 +251,8 @@
 }
 
 /* --- When to Start Section --- */
-.whenToStartListItem, .whenToStartListItemDetailed {
+.whenToStartListItem,
+.whenToStartListItemDetailed {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
@@ -267,6 +299,7 @@
   color: var(--color-brand-pink);
   border: 1px solid var(--color-brand-pink);
 }
+
 .aboutUsButton:hover {
   background-color: var(--background-brand);
 }
@@ -274,7 +307,8 @@
 /* --- Services Table Section --- */
 .servicesTableSection {
   padding: 4rem 1rem;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
+  /* White background */
 }
 
 .scheduleTable {
@@ -293,8 +327,10 @@
 .scheduleHeader {
   background-color: var(--color-brand-pink-lightest);
   font-weight: 700;
-  display: none; /* ซ่อน header ใน mobile view */
+  display: none;
+  /* ซ่อน header ใน mobile view */
 }
+
 .scheduleRow:last-child {
   border-bottom: none;
 }
@@ -306,7 +342,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-basis: 100%; /* ให้แต่ละ cell กว้างเต็มใน mobile */
+  flex-basis: 100%;
+  /* ให้แต่ละ cell กว้างเต็มใน mobile */
   border-bottom: 1px solid var(--color-brand-pink-light);
 }
 
@@ -360,10 +397,12 @@
   margin-top: 1.5rem;
   font-size: 0.9rem;
   color: var(--text-subtle);
-  max-width: 42rem; /* max-w-2xl */
+  max-width: 42rem;
+  /* max-w-2xl */
   margin-left: auto;
   margin-right: auto;
 }
+
 .scheduleRow:not(.scheduleHeader) {
   background-color: #ffffff;
   margin-bottom: 1rem;
@@ -402,7 +441,8 @@
 
 .timelineContainer {
   position: relative;
-  max-width: 48rem; /* max-w-3xl */
+  max-width: 48rem;
+  /* max-w-3xl */
   margin: 3rem auto 0;
 }
 
@@ -414,23 +454,28 @@
   background-color: var(--color-brand-pink);
   top: 0;
   bottom: 0;
-  left: 1.5rem; /* 24px */
+  left: 1.5rem;
+  /* 24px */
   transform: translateX(-50%);
 }
 
 .timelineItem {
-  padding: 1rem 0 2rem 3.5rem; /* pl-14 */
+  padding: 1rem 0 2rem 3.5rem;
+  /* pl-14 */
   position: relative;
 }
 
 /* จุดวงกลมบนเส้น Timeline */
 .timelineIcon {
   position: absolute;
-  left: 1.5rem; /* 24px */
+  left: 1.5rem;
+  /* 24px */
   top: 0.25rem;
   transform: translateX(-50%);
-  width: 1.25rem; /* 20px */
-  height: 1.25rem; /* 20px */
+  width: 1.25rem;
+  /* 20px */
+  height: 1.25rem;
+  /* 20px */
   background-color: white;
   border: 4px solid var(--color-brand-pink);
   border-radius: 9999px;
@@ -473,14 +518,17 @@
 
 /* --- Team Section --- */
 .teamSection {
-  padding: 4rem 1rem; /* py-16 px-4 */
+  padding: 4rem 1rem;
+  /* py-16 px-4 */
 }
 
 .teamSectionTitle {
   color: var(--text-primary);
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.875rem;
+  /* text-3xl */
   font-weight: 700;
-  margin-bottom: 3rem; /* mb-12 */
+  margin-bottom: 3rem;
+  /* mb-12 */
   text-align: center;
 }
 
@@ -492,22 +540,28 @@
 
 .teamMemberCard {
   background-color: var(--color-brand-pink-lightest);
-  padding: 2rem; /* p-8 */
+  padding: 2rem;
+  /* p-8 */
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-soft);
   transition: transform 0.3s;
   text-align: center;
 }
+
 .teamMemberCard:hover {
   transform: translateY(-0.5rem);
 }
 
 .teamMemberImage {
-  width: 8rem; /* w-32 */
-  height: 8rem; /* h-32 */
-  border-radius: 9999px; /* rounded-full, ทำให้กลับเป็นวงกลม */
+  width: 8rem;
+  /* w-32 */
+  height: 8rem;
+  /* h-32 */
+  border-radius: 9999px;
+  /* rounded-full, ทำให้กลับเป็นวงกลม */
   object-fit: cover;
-  margin: 0 auto 1rem; /* mx-auto mb-4 */
+  margin: 0 auto 1rem;
+  /* mx-auto mb-4 */
   border: 4px solid #ffffff;
   box-shadow: 0 0 0 4px var(--color-brand-pink);
 
@@ -515,7 +569,8 @@
 
 .teamMemberQuote {
   color: var(--text-secondary);
-  margin-top: 1rem; /* mt-4 */
+  margin-top: 1rem;
+  /* mt-4 */
   font-style: italic;
   font-size: 0.9rem;
 }
@@ -527,7 +582,8 @@
 
 .teamMemberPosition {
   color: var(--text-subtle);
-  font-size: 0.875rem; /* text-sm */
+  font-size: 0.875rem;
+  /* text-sm */
 }
 
 /* --- FAQ Section --- */
@@ -537,7 +593,8 @@
 }
 
 .faqContainer {
-  max-width: 48rem; /* max-w-3xl */
+  max-width: 48rem;
+  /* max-w-3xl */
   margin: 3rem auto 0;
   border: 1px solid var(--color-brand-pink-light);
   border-radius: var(--border-radius-lg);
@@ -547,6 +604,7 @@
 .faqItem {
   border-bottom: 1px solid var(--color-brand-pink-light);
 }
+
 .faqItem:last-child {
   border-bottom: none;
 }
@@ -563,6 +621,7 @@
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
 .faqQuestion:hover {
   background-color: var(--color-brand-pink-lightest);
 }
@@ -586,12 +645,16 @@
  */
 .faqAnswerWrapper {
   display: grid;
-  grid-template-rows: 0fr; /* เริ่มต้นที่ความสูง 0 */
+  grid-template-rows: 0fr;
+  /* เริ่มต้นที่ความสูง 0 */
   transition: grid-template-rows 0.3s ease-out;
 }
+
 .faqAnswerWrapper.open {
-  grid-template-rows: 1fr; /* ขยายความสูงให้พอดีกับเนื้อหา */
+  grid-template-rows: 1fr;
+  /* ขยายความสูงให้พอดีกับเนื้อหา */
 }
+
 .faqAnswer {
   overflow: hidden;
   padding: 0 1.5rem 1.25rem;
@@ -611,47 +674,127 @@
 /* --- Contact Section --- */
 .contactSection {
   padding: 4rem 1rem;
-  background-color: var(--background-brand);
+  background-color: #f9fafb; /* เปลี่ยนพื้นหลังเป็นสีเทาอ่อนให้ดูสะอาดตา */
 }
 
 .contactDetails {
   background-color: white;
-  padding: 2rem;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-soft);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 64rem; /* ขยายความกว้าง */
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #e2e8f0;
+}
+
+@media (min-width: 768px) {
+  .contactDetails {
+    padding: 3rem;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr); /* แสดง 2 คอลัมน์บนจอใหญ่ */
+  }
+}
+
+.contactDetailItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contactIconWrapper {
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .contactIconWrapper {
+    padding: 1rem;
+  }
+}
+
+.contactIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.contactTextWrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  align-items: flex-start;
-  max-width: 42rem; /* max-w-2xl */
+}
+
+.contactTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contactInfo {
+  color: var(--text-primary);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.contactMapWrapper {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.contactDetailItem {
-  text-align: left;
+@media (min-width: 768px) {
+  .contactMapWrapper {
+    padding: 1rem;
+  }
 }
 
-.contactTitle {
-  font-weight: 700;
-  color: var(--text-primary);
+.contactMapFrame {
+  width: 100%;
+  height: 400px;
+  border-radius: 0.25rem;
+  display: block;
 }
 
-.contactInfo {
-  color: var(--text-secondary);
-  font-size: 1rem;
-  line-height: 1.6;
+.desktopMap {
+  display: none;
+}
+
+.mobileMapButtonWrapper {
+  display: block;
+  text-align: center;
 }
 
 /* --- CTA Section (Call to Action) --- */
 .ctaSection {
   background-color: var(--background-brand);
-  padding: 4rem 1rem; /* py-16 px-4 */
+  padding: 4rem 1rem;
+  /* py-16 px-4 */
 }
 
 .ctaContainer {
-  max-width: 48rem; /* max-w-3xl */
+  max-width: 48rem;
+  /* max-w-3xl */
   margin: 0 auto;
   text-align: center;
 }
@@ -664,16 +807,22 @@
 }
 
 .ctaTitle {
-  font-size: 1.875rem; /* text-3xl */
-  font-weight: 700; /* font-bold */
-  color: #1e293b; /* text-gray-800 */
-  margin-bottom: 1rem; /* mb-4 */
+  font-size: 1.875rem;
+  /* text-3xl */
+  font-weight: 700;
+  /* font-bold */
+  color: #1e293b;
+  /* text-gray-800 */
+  margin-bottom: 1rem;
+  /* mb-4 */
 }
 
 .ctaDescription {
   color: var(--text-secondary);
-  margin-bottom: 2rem; /* mb-8 */
-  max-width: 42rem; /* max-w-2xl */
+  margin-bottom: 2rem;
+  /* mb-8 */
+  max-width: 42rem;
+  /* max-w-2xl */
   margin-left: auto;
   margin-right: auto;
 }
@@ -691,59 +840,84 @@
  * การปรับแก้สไตล์สำหรับหน้าจอขนาดต่างๆ
  * md: สำหรับ Tablet และ Desktop ขนาดเล็ก (768px ขึ้นไป)
  */
-@media (min-width: 768px) { /* md */
+@media (min-width: 768px) {
+
+  /* md */
   .heroContainer {
     flex-direction: row;
     text-align: left;
     gap: 4rem;
   }
+
   .heroTextWrapper {
     text-align: left;
-    flex: 1 1 55%; /* ให้ข้อความใช้พื้นที่ 55% */
+    flex: 1 1 55%;
+    /* ให้ข้อความใช้พื้นที่ 55% */
   }
+
   .heroButtonContainer {
     flex-direction: row;
     margin: 0;
-    max-width: none; /* ยกเลิก max-width บนจอใหญ่ */
-    width: auto; /* ให้ความกว้างขึ้นอยู่กับเนื้อหา */
+    max-width: none;
+    /* ยกเลิก max-width บนจอใหญ่ */
+    width: auto;
+    /* ให้ความกว้างขึ้นอยู่กับเนื้อหา */
   }
+
   .heroImageWrapper {
-    display: block; /* แสดงรูปภาพในหน้าจอที่ใหญ่ขึ้น */
-    flex: 1 1 45%; /* ให้รูปภาพใช้พื้นที่ 45% */
-    max-width: none; /* ลบ max-width บนจอใหญ่เพื่อให้ยืดหยุ่นตาม flex */
+    display: block;
+    /* แสดงรูปภาพในหน้าจอที่ใหญ่ขึ้น */
+    flex: 1 1 45%;
+    /* ให้รูปภาพใช้พื้นที่ 45% */
+    max-width: none;
+    /* ลบ max-width บนจอใหญ่เพื่อให้ยืดหยุ่นตาม flex */
   }
+
   .section {
-    padding-top: 5rem; /* md:py-20 */
+    padding-top: 5rem;
+    /* md:py-20 */
     padding-bottom: 5rem;
   }
+
   .sectionTitle {
-    font-size: 2.25rem; /* text-4xl */
+    font-size: 2.25rem;
+    /* text-4xl */
   }
 
   .splitSectionContainer {
-    flex-direction: row; /* เปลี่ยนเป็นแนวนอน */
+    flex-direction: row;
+    /* เปลี่ยนเป็นแนวนอน */
   }
+
   .splitSectionImageWrapper {
-    display: block; /* แสดงรูปภาพในหน้าจอที่ใหญ่ขึ้น */
-    width: 45%; /* กำหนดสัดส่วนรูปภาพ */
+    display: block;
+    /* แสดงรูปภาพในหน้าจอที่ใหญ่ขึ้น */
+    width: 45%;
+    /* กำหนดสัดส่วนรูปภาพ */
   }
+
   .splitSectionTextWrapper {
     display: block;
     width: 55%;
     text-align: left;
   }
+
   .sectionDescription {
-    text-align: left; /* คืนค่า text-align สำหรับ split section */
+    text-align: left;
+    /* คืนค่า text-align สำหรับ split section */
   }
+
   /* ทำให้ description ที่ไม่ได้อยู่ใน split section กลับไปเป็น center */
-  .section > .sectionDescription {
+  .section>.sectionDescription {
     text-align: center;
   }
 
   /* --- Services Table --- */
   .scheduleTable {
-    display: block; /* ใช้ display ปกติ */
+    display: block;
+    /* ใช้ display ปกติ */
   }
+
   .scheduleRow {
     border-radius: 0;
     box-shadow: none;
@@ -755,17 +929,23 @@
     border-right: none;
     border-bottom: 1px solid var(--color-brand-pink-light);
   }
+
   .scheduleHeader {
-    display: flex; /* แสดง header บนจอใหญ่ */
+    display: flex;
+    /* แสดง header บนจอใหญ่ */
   }
+
   .scheduleCell {
-    flex-basis: auto; /* คืนค่า flex-basis */
-    border-bottom: none; /* Remove bottom border from cells */
+    flex-basis: auto;
+    /* คืนค่า flex-basis */
+    border-bottom: none;
+    /* Remove bottom border from cells */
     padding: 1rem;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+
   .dayCell {
     flex: 2;
     background-color: var(--color-brand-pink-lightest);
@@ -774,35 +954,47 @@
     padding: 1rem;
     border-right: 1px solid var(--color-brand-pink-light);
   }
+
   .timeSlotCell {
     flex: 4;
   }
 
   .timelineContainer::after {
-    left: 50%; /* ย้ายเส้น Timeline มาตรงกลาง */
+    left: 50%;
+    /* ย้ายเส้น Timeline มาตรงกลาง */
   }
+
   .timelineItem {
-    width: 50%; /* กำหนดให้แต่ละ item กว้าง 50% */
+    width: 50%;
+    /* กำหนดให้แต่ละ item กว้าง 50% */
     padding-left: 0;
     padding-right: 3rem;
   }
+
   .timelineItem:nth-child(odd) {
     left: 0;
   }
+
   .timelineItem:nth-child(even) {
-    left: 50%; /* สลับ item คู่ไปด้านขวา */
+    left: 50%;
+    /* สลับ item คู่ไปด้านขวา */
     padding-left: 3rem;
     padding-right: 0;
   }
+
   .timelineIcon {
     left: 50%;
   }
+
   .teamGrid {
-    grid-template-columns: repeat(2, 1fr); /* เริ่มต้นที่ 2 คอลัมน์ */
+    grid-template-columns: repeat(2, 1fr);
+    /* เริ่มต้นที่ 2 คอลัมน์ */
   }
+
   .ctaContent {
     padding: 3rem;
   }
+
   .faqCta {
     flex-direction: row;
     justify-content: center;
@@ -812,37 +1004,316 @@
   .scheduleRow:not(.scheduleHeader) .dayCell {
     border-radius: 0;
   }
+
   .scheduleRow:not(.scheduleHeader) .timeSlotCell {
-    display: flex; /* Revert to flex for desktop */
-    flex-direction: column; /* Keep vertical stacking inside cell */
+    display: flex;
+    /* Revert to flex for desktop */
+    flex-direction: column;
+    /* Keep vertical stacking inside cell */
     background-color: #ffffff;
     text-align: center;
     padding: 1.25rem 1rem;
     position: static;
     border-bottom: none;
   }
+
   .scheduleRow:not(.scheduleHeader) .timeSlotCell::before {
-    content: none; /* Hide the time label on desktop */
+    content: none;
+    /* Hide the time label on desktop */
+  }
+
+  .desktopMap {
+    display: block;
+  }
+
+  .mobileMapButtonWrapper {
+    display: none;
   }
 }
 
 /* lg: สำหรับ Desktop ขนาดใหญ่ (1024px ขึ้นไป) */
-@media (min-width: 1024px) { /* lg */
+@media (min-width: 1024px) {
+
+  /* lg */
   .heroSection {
-    padding-top: 8rem; /* เพิ่ม padding บนจอใหญ่ */
+    padding-top: 8rem;
+    /* เพิ่ม padding บนจอใหญ่ */
     padding-bottom: 8rem;
   }
+
   .heroTitle {
-    font-size: 3rem; /* text-5xl, เพิ่มขนาดตัวอักษรบนจอใหญ่ */
+    font-size: 3rem;
+    /* text-5xl, เพิ่มขนาดตัวอักษรบนจอใหญ่ */
   }
+
   .heroDescription {
-    font-size: 1.125rem; /* text-lg */
+    font-size: 1.125rem;
+    /* text-lg */
   }
 }
 
 /* xl: สำหรับ Desktop ขนาดใหญ่มาก (1280px ขึ้นไป) */
-@media (min-width: 1280px) { /* xl */
+@media (min-width: 1280px) {
+
+  /* xl */
   .teamGrid {
-    grid-template-columns: repeat(3, 1fr); /* แสดงทีมงาน 3 คอลัมน์บนจอใหญ่ */
+    grid-template-columns: repeat(3, 1fr);
+    /* แสดงทีมงาน 3 คอลัมน์บนจอใหญ่ */
   }
+}
+
+/* --- LINE VOOM Section Styles --- */
+
+.voomGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .voomGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.voomCard {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+  /* border-top: 4px solid var(--color-brand-pink); */
+  height: 100%;
+}
+
+.voomCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.voomCardLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.voomContent {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.voomTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.voomCardLink:hover .voomTitle {
+  color: var(--color-brand-pink);
+}
+
+.voomDescription {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.voomAuthor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.voomAuthorIcon {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: var(--color-brand-pink);
+}
+
+.voomButton {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* --- Our Works Section --- */
+.worksGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .worksGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.workCard {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.workCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.workImageWrapper {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background-color: #f3f4f6;
+  overflow: hidden;
+}
+
+.workImage {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.workCard:hover .workImage {
+  transform: scale(1.05);
+}
+
+.workCardLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.workContent {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.workCategory {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-brand-pink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.workTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.workCardLink:hover .workTitle {
+  color: var(--color-brand-pink);
+}
+
+.workDescription {
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* --- Formal Section Styles (When to Start) --- */
+.formalSection {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.formalImageWrapper {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.formalHighlightBox {
+  background-color: #f9fafb;
+  border-left: 4px solid var(--color-brand-pink);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+  border: 1px solid #e5e7eb;
+  border-left-width: 4px;
+}
+
+.formalHighlightTitle {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.formalHighlightText {
+  color: var(--color-brand-pink);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.formalList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.formalListItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.formalListItem:last-child {
+  border-bottom: none;
+}
+
+.formalListItemIcon {
+  color: var(--color-brand-pink);
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
 }

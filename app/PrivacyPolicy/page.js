@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './page.module.css';
 
 /**
@@ -14,19 +15,32 @@ export default function Page() {
     <div className={styles.pageWrapper}>
       {/* .contentContainer: กล่องสีขาวสำหรับใส่เนื้อหาหลัก จัดให้อยู่กึ่งกลางและมีเงา */}
       <div className={styles.contentContainer}>
+        {/* === Document Header (Letterhead) === */}
+        <div style={{ textAlign: 'center', marginBottom: '2rem', borderBottom: '2px solid #eaeaea', paddingBottom: '1.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
+            <Image src="/logo.jpg" alt="Logo" width={80} height={80} />
+          </div>
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', margin: '0 0 0.5rem 0', color: '#333' }}>
+            โรงพยาบาลชุมชนเทศบาลเมืองกำแพงเพชร
+          </h2>
+          <p style={{ fontSize: '0.9rem', color: '#666', margin: 0 }}>
+            งานส่งเสริมสุขภาพแม่และเด็ก
+          </p>
+        </div>
+
         {/* .mainTitle: หัวข้อหลักของหน้า */}
-        <h1 className={styles.mainTitle}>
+        <h1 className={styles.mainTitle} style={{ textAlign: 'center', marginTop: 0 }}>
           นโยบายความเป็นส่วนตัว (Privacy Policy)
         </h1>
         {/* .lastUpdated: แสดงวันที่ปรับปรุงล่าสุด */}
-        <p className={styles.lastUpdated}>
+        <p className={styles.lastUpdated} style={{ textAlign: 'center', fontStyle: 'italic', color: '#666' }}>
           อัปเดตล่าสุด: 23/8/2568
         </p>
 
         {/* === Section 1: บทนำ === */}
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           โรงพยาบาลชุมชนเทศบาลเมืองกำแพงเพชร ("เรา", "พวกเรา", หรือ "ของเรา")
-          เป็นผู้ดำเนินการเว็บไซต์ งงานส่งเสริมสุขภาพแม่และเด็ก | โรงพยาบาลชุมชนเทศบาลเมืองกำแพงเพชร 
+          เป็นผู้ดำเนินการเว็บไซต์ งานส่งเสริมสุขภาพแม่และเด็ก | โรงพยาบาลชุมชนเทศบาลเมืองกำแพงเพชร 
           (เว็บไซต์เพื่อสตรีมีครรภ์) ("บริการ")
           หน้านี้จะแจ้งให้คุณทราบถึงนโยบายของเราเกี่ยวกับการรวบรวม การใช้
           และการเปิดเผยข้อมูลส่วนบุคคลเมื่อคุณใช้บริการของเรา
@@ -37,7 +51,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           การรวบรวมและใช้ข้อมูล (Information Collection and Use)
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           เรารวบรวมข้อมูลหลายประเภทเพื่อวัตถุประสงค์ต่างๆ
           ในการให้บริการและปรับปรุงบริการของเราให้ดียิ่งขึ้น
         </p>
@@ -49,7 +63,7 @@ export default function Page() {
         <h4 className={styles.tertiaryTitle}>
           ข้อมูลส่วนบุคคล (Personal Data)
         </h4>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           ในขณะที่ใช้บริการของเรา
           เราอาจขอให้คุณให้ข้อมูลที่สามารถระบุตัวตนได้ซึ่งสามารถใช้ในการติดต่อหรือระบุตัวตนของคุณ
           ("ข้อมูลส่วนบุคคล")
@@ -65,7 +79,7 @@ export default function Page() {
         <h4 className={styles.tertiaryTitle}>
           ข้อมูลการใช้งาน (Usage Data)
         </h4>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           เราอาจรวบรวมข้อมูลเกี่ยวกับวิธีการเข้าถึงและใช้บริการ
           ("ข้อมูลการใช้งาน")
           ข้อมูลการใช้งานนี้อาจรวมถึงข้อมูลต่างๆ เช่น ที่อยู่ Internet Protocol
@@ -80,7 +94,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           การใช้ข้อมูล (Use of Data)
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           โรงพยาบาลชุมชนเทศบาลเมืองกำแพงเพชร
           ใช้ข้อมูลที่รวบรวมเพื่อวัตถุประสงค์ต่างๆ:
         </p>
@@ -102,7 +116,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           การเปิดเผยข้อมูล (Disclosure of Data)
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           เราอาจเปิดเผยข้อมูลส่วนบุคคลของคุณโดยเชื่อโดยสุจริตว่าการกระทำดังกล่าวมีความจำเป็นเพื่อ:
         </p>
         <ul className={styles.list}>
@@ -123,7 +137,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           ความปลอดภัยของข้อมูล (Security of Data)
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           ความปลอดภัยของข้อมูลของคุณมีความสำคัญต่อเรา
           แต่โปรดจำไว้ว่าไม่มีวิธีการส่งข้อมูลทางอินเทอร์เน็ตหรือวิธีการจัดเก็บข้อมูลอิเล็กทรอนิกส์ใดที่ปลอดภัย
           100% ในขณะที่เราพยายามใช้วิธีการที่ยอมรับได้ในเชิงพาณิชย์เพื่อปกป้องข้อมูลส่วนบุคคลของคุณ
@@ -135,7 +149,7 @@ export default function Page() {
           การเปลี่ยนแปลงนโยบายความเป็นส่วนตัวนี้ (Changes to This Privacy
           Policy)
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           เราอาจปรับปรุงนโยบายความเป็นส่วนตัวของเราเป็นครั้งคราว
           เราจะแจ้งให้คุณทราบถึงการเปลี่ยนแปลงใดๆ
           โดยการโพสต์นโยบายความเป็นส่วนตัวใหม่ในหน้านี้
@@ -148,7 +162,7 @@ export default function Page() {
         <h2 className={styles.sectionTitle}>
           ติดต่อเรา (Contact Us)
         </h2>
-        <p className={styles.paragraph}>
+        <p className={styles.paragraph} style={{ textAlign: 'justify' }}>
           หากคุณมีคำถามใดๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเรา:
         </p>
         <ul className={styles.list}>

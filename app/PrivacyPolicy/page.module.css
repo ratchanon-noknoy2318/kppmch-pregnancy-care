@@ -46,7 +46,7 @@
  * Typography
  * ===================================================================== */
 .mainTitle {
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.5rem; /* text-2xl */
   font-weight: 700;
   text-align: center;
   color: var(--color-brand-pink);
@@ -55,7 +55,7 @@
 
 @media (min-width: 768px) {
   .mainTitle {
-    font-size: 2.25rem; /* md:text-4xl */
+    font-size: 1.875rem; /* md:text-3xl */
   }
 }
 
@@ -71,7 +71,7 @@
 }
 
 .sectionTitle {
-  font-size: 1.5rem; /* text-2xl */
+  font-size: 1.25rem; /* text-xl */
   font-weight: 700;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
@@ -82,7 +82,7 @@
 
 @media (min-width: 768px) {
   .sectionTitle {
-    font-size: 1.875rem; /* md:text-3xl */
+    font-size: 1.5rem; /* md:text-2xl */
   }
 }
 
@@ -98,7 +98,7 @@
 }
 
 .subSectionTitle {
-  font-size: 1.25rem; /* text-xl */
+  font-size: 1.125rem; /* text-lg */
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -106,12 +106,12 @@
 
 @media (min-width: 768px) {
   .subSectionTitle {
-    font-size: 1.5rem; /* md:text-2xl */
+    font-size: 1.25rem; /* md:text-xl */
   }
 }
 
 .tertiaryTitle {
-  font-size: 1.125rem; /* text-lg */
+  font-size: 1rem; /* text-base */
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
@@ -119,7 +119,7 @@
 
 @media (min-width: 768px) {
   .tertiaryTitle {
-    font-size: 1.25rem; /* md:text-xl */
+    font-size: 1.125rem; /* md:text-lg */
   }
 }
 
