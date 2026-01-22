@@ -2,6 +2,8 @@
 **Maternal Healthcare Automation System**
 
 ---
+![Project Header](https://kppmch-pregnant.vercel.app/og-image.png)
+---
 
 ### Technical & Architecture
 | Category | Detail | Implementation |
